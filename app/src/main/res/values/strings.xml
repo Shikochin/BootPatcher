@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Boot Patcher</string>
+    <string name="boot_image">Boot image</string>
+    <string name="boot_image_empty">Choose boot.img</string>
+    <string name="kernel_image">Kernel image</string>
+    <string name="kernel_image_empty">Choose Image or AnyKernel3 ZIP</string>
+    <string name="choose_file">Choose file</string>
+    <string name="patch_and_save">Patch and save</string>
+    <string name="working">Working</string>
+    <string name="copying_boot">Copying boot image</string>
+    <string name="reading_kernel">Reading kernel image</string>
+    <string name="unpacking">Unpacking boot image</string>
+    <string name="replacing_kernel">Replacing kernel</string>
+    <string name="repacking">Repacking boot image</string>
+    <string name="saving">Saving patched image</string>
+    <string name="done">%1$s saved</string>
+    <string name="failed">Patch failed</string>
+    <string name="output_conflict">Choose an output file different from the input files.</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="about">About</string>
+    <string name="about_body">Uses magiskboot from Magisk v30.7. Magisk is licensed under GPL-3.0.</string>
+    <string name="close">Close</string>
+    <string name="magisk_source">Magisk source</string>
+    <string name="unknown_size">Unknown size</string>
+    <string name="settings">Settings</string>
+    <string name="back">Back</string>
+    <string name="output_settings">Output</string>
+    <string name="output_location">Output location</string>
+    <string name="output_location_empty">Choose a folder in Settings</string>
+    <string name="output_directory">Folder</string>
+    <string name="output_directory_empty">Choose folder</string>
+    <string name="output_file_name">File name</string>
+    <string name="final_output_name">Saved as %1$s</string>
+    <string name="documents_ui_unavailable">The Android system Files app is unavailable.</string>
+</resources>
