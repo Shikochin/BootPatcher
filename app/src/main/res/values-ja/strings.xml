@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Boot Patcher</string>
+    <string name="boot_image">ブートイメージ</string>
+    <string name="boot_image_empty">boot.img を選択</string>
+    <string name="kernel_image">カーネルイメージ</string>
+    <string name="kernel_image_empty">Image または AnyKernel3 ZIP を選択</string>
+    <string name="choose_file">ファイルを選択</string>
+    <string name="patch_and_save">パッチして保存</string>
+    <string name="working">処理中</string>
+    <string name="copying_boot">ブートイメージをコピー中</string>
+    <string name="reading_kernel">カーネルイメージを読み込み中</string>
+    <string name="unpacking">ブートイメージを展開中</string>
+    <string name="replacing_kernel">カーネルを置換中</string>
+    <string name="repacking">ブートイメージを再パック中</string>
+    <string name="saving">パッチ済みイメージを保存中</string>
+    <string name="done">%1$s を保存しました</string>
+    <string name="failed">パッチに失敗しました</string>
+    <string name="output_conflict">入力ファイルとは異なる出力ファイルを選択してください。</string>
+    <string name="dismiss">閉じる</string>
+    <string name="about">アプリ情報</string>
+    <string name="about_body">Magisk v30.7 の magiskboot を使用しています。Magisk は GPL-3.0 でライセンスされています。</string>
+    <string name="close">閉じる</string>
+    <string name="magisk_source">Magisk のソースコード</string>
+    <string name="unknown_size">サイズ不明</string>
+    <string name="settings">設定</string>
+    <string name="back">戻る</string>
+    <string name="output_settings">出力</string>
+    <string name="output_location">出力先</string>
+    <string name="output_location_empty">設定でフォルダーを選択してください</string>
+    <string name="output_directory">フォルダー</string>
+    <string name="output_directory_empty">フォルダーを選択</string>
+    <string name="output_file_name">ファイル名</string>
+    <string name="final_output_name">%1$s として保存</string>
+    <string name="documents_ui_unavailable">Android システムのファイルアプリを利用できません。</string>
+</resources>

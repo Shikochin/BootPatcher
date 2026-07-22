@@ -60,7 +60,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     buildFeatures.compose = true
-    androidResources.localeFilters += listOf("en", "zh-rCN")
+    androidResources {
+        generateLocaleConfig = true
+        localeFilters += listOf("en", "ja", "zh-rCN")
+    }
 
     packaging {
         jniLibs.useLegacyPackaging = false

@@ -151,15 +151,46 @@ jobs:
             done < dist/SHA256SUMS.txt
           } > dist/RELEASE_NOTES.md
 
-      - name: Upload APK artifacts
+          cat dist/RELEASE_NOTES.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload universal APK
         uses: actions/upload-artifact@v4
         with:
-          name: Boot-Patcher-release-APKs
-          path: |
-            dist/*.apk
-            dist/SHA256SUMS.txt
-            dist/RELEASE_NOTES.md
-          compression-level: 9
+          name: Boot-Patcher-universal
+          path: dist/Boot-Patcher-universal.apk
+          compression-level: 0
+          if-no-files-found: error
+
+      - name: Upload arm64 APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Boot-Patcher-arm64
+          path: dist/Boot-Patcher-arm64.apk
+          compression-level: 0
+          if-no-files-found: error
+
+      - name: Upload arm32 APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Boot-Patcher-arm32
+          path: dist/Boot-Patcher-arm32.apk
+          compression-level: 0
+          if-no-files-found: error
+
+      - name: Upload x86 APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Boot-Patcher-x86
+          path: dist/Boot-Patcher-x86.apk
+          compression-level: 0
+          if-no-files-found: error
+
+      - name: Upload x86-64 APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Boot-Patcher-x86-64
+          path: dist/Boot-Patcher-x86-64.apk
+          compression-level: 0
           if-no-files-found: error
 
       - name: Select release tag
@@ -184,5 +215,4 @@ jobs:
             dist/Boot-Patcher-arm32.apk
             dist/Boot-Patcher-x86.apk
             dist/Boot-Patcher-x86-64.apk
-            dist/SHA256SUMS.txt
           fail_on_unmatched_files: true

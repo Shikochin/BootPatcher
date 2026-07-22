@@ -38,6 +38,9 @@ GitHub Actions builds all five optimized release APKs on pushes to `main`, pull
 requests, and manual dispatches. A manual dispatch can optionally publish a
 GitHub Release containing every APK and their SHA-256 hashes.
 
+The interface follows the system language and currently includes English,
+Japanese, and Simplified Chinese resources.
+
 Release signing supports these repository secrets:
 
 - `RELEASE_KEYSTORE_BASE64`
